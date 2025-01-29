@@ -33,7 +33,15 @@ export const adduser = async (req, res) => {
   }
 };
 export const Allusers = async (req, res) => {
-  
+  try {
+    const users = await user.find();
+    res.status(200).json(users);
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
 };
 
 export const deleteuser = async (req, res) => {
