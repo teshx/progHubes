@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon API/index.js"
+    "dev": "nodemon JWT/index.js"
   },
   "keywords": [],
   "author": "",
